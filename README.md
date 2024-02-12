@@ -1,1 +1,1 @@
-It's a repo for my lerning python
+It's a repo for my lernin python
