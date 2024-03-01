@@ -1,4 +1,6 @@
+import sys
 import socket
+import threading
 
 
 HOST = '127.0.0.1'
@@ -10,7 +12,7 @@ def start_server():
     server.listen()
     while True:
         client_socket, address = server.accept()
-        print(address)
+        print('connected:', address)
         server_send(client_socket)
 def server_send(client_socket):
     while True:
